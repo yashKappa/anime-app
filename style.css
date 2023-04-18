@@ -291,6 +291,7 @@ body{
 }
 #Banners-container img{
     width: 190px;
+    height: 30rem;
     border-radius: 10px;
     margin-right:20px;
     margin-top: 12px;
@@ -309,7 +310,7 @@ body{
     border-radius: 3px;
     position: absolute;
     display: inline-block;
-    top: 5px;
+    top: 2rem;
     left: 10px;
     font-size: 0.9em;
     font-family: 'Ubuntu', sans-serif;
