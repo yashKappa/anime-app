@@ -24,3 +24,12 @@ function myFunction() {
       x.className = x.className.replace(" ", "");
     }
   }
+
+    function auth(){
+    var name = document.getElementById("name").value;
+    var password = document.getElementById("password").value;
+    if(name == "Admin" && password == "1234"){
+        window.location.assign("Popular Shows.html");
+        alert("login sucessfully");
+    }
+}
