@@ -57,12 +57,12 @@
 
     <div class="container">
       <label for="uname"><b class="pos">Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required><br>
+      <input type="text" placeholder="Enter Username" name="uname" id="name"><br>
 
       <label for="psw"><b class="pos">Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required><br>
+      <input type="password" placeholder="Enter Password" name="password" id="password" required><br>
         
-     <span class="log" ><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" type="submit" href="#Login">Login</button></span><br>
+      <input type="submit" class="submit" value="Login" id="" onclick="auth()">
       <label>
         <input type="checkbox" checked="checked" name="remember" ><b class="pos"> Remember me</b>
       </label>
