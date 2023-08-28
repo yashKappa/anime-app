@@ -33,3 +33,20 @@ function myFunction() {
         alert("login sucessfully");
     }
 }
+const darkModePreference = localStorage.getItem('darkMode');
+if (darkModePreference === 'enabled') {
+    document.body.classList.add('dark-theme');
+}
+
+var dark = document.getElementById("dark");
+dark.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem('darkMode', 'enabled');
+        dark.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4fGVNunr4hoSFMPEda8O2vi5YX6-dinzcg&usqp=CAU";
+    } else {
+        localStorage.setItem('darkMode', 'disabled');
+        dark.src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx4fGVNunr4hoSFMPEda8O2vi5YX6-dinzcg&usqp=CAU";
+    }
+}
