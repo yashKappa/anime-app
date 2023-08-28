@@ -31,15 +31,7 @@
                         <a href="Recently added.html">Recently added</a>
                         <a href="lates News.html">Latest News</a>
                     </div></span>
-                    <span onclick="myFunction()" >
-                        <a href="#categories">Categories</a>
-                            <div id="drop-down-menu">
-                                <a href="trending.html" >Trending Now</a>
-                                <a href="Popular Shows.html">Popular Shows</a>
-                                <a href="Recently added.html">Recently added</a>
-                                <a href="lates News.html">Latest News</a>
-                            </div></span>
-                
+                    
             </nav>
             <div class="icons">
                 <i class="fas fa-bars" id="menu-bars"></i>
@@ -49,7 +41,7 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="post">
+  <form class="modal-content animate" action="/login" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcFYr7TESaBm_UeCiJJp6DQKDUzyjdsIDfug&usqp=CAU" alt="Avatar" class="avatar">
@@ -57,12 +49,13 @@
 
     <div class="container">
       <label for="uname"><b class="pos">Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" id="name"><br>
+      <input type="text" placeholder="Enter Username" name="uname" id="name" required><br>
 
       <label for="psw"><b class="pos">Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" id="password" required><br>
-        
-      <input type="submit" class="submit" value="Login" id="" onclick="auth()">
+        <div class="sub">
+            <span class="sub"><input type="submit" class="submit" value="Login" id="" onclick="auth()"></span>
+        </div>
       <label>
         <input type="checkbox" checked="checked" name="remember" ><b class="pos"> Remember me</b>
       </label>
