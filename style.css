@@ -35,14 +35,18 @@ body{
     color: #ff0000;
 
 }
-#Navbar{
+.Navbar{
     display: flex;
     justify-content: center;
-    background-color: rgb(20, 24, 26);
+    background-color: rgb(216, 3, 3);
     color: white;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
     font-weight:bold;
+    width: auto;
+    height: 5vh;
+    margin-right: 0.5rem;
+    border-radius: 0.2rem;
 }
 #Other-Navbar{
     display: none;
@@ -68,7 +72,7 @@ body{
 }
 #Other-Navbar ul li a{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 
 }
 .show{
@@ -78,10 +82,12 @@ body{
 
 
 .h1{
-    color: #fff;
+    color: #ffffff;
     font-weight: bolder;
     font-family:cursive;
     font-size:4rem;
+    padding-bottom: 15px;
+    margin-left: 0.8rem;
 }
 
 #logo{
@@ -489,53 +495,7 @@ body{
 
 
 
-/* News section */
 
-@media only screen and (max-width:1132px) {
-
-    .slider{
-        width: 860px;
-    }
-
-    #contentBanners{
-        width: 537px;
-        flex-wrap: wrap;
-    }
-    .Image-Name{
-        padding-right: 12px;
-        width: 167px;
-    }
-
-    #ImageOfNews{
-        width: 300px;
-    }
-    #ImageOfNews img{
-        width: 300px;
-    }
-    #Banners-container{
-        width: 537px;
-    }
-    #Banners-container img{
-        width: 167px;
-    }
-
-    .comments{
-        top: 231px;
-    }
-    .watch{
-        width: 53px;
-        top: 231px;
-        left: 91px;
-    }
-
-
-    #LatestNews{
-        margin-left: 30px;
-    }
-    #LatestNewsSection{
-        width: 300px;
-    }
-}
 @media only screen and  (max-width:900px){
     #Menu-Btn{
         display: block;
@@ -577,16 +537,7 @@ body{
         width: 700px;
     }
 
-
-
-
-    .Image-Name{
-        padding-right: 12px;
-        width: 163px;
-    }
-}
-
-@media only screen and  (max-width:730px){
+  
     .slider{
         width: 540px;
     }
@@ -600,8 +551,6 @@ body{
     #Banners-container{
         width: 540px;
     }
-}
-@media only screen and  (max-width:550px){
     .slider{
         width: 380px;
         height: 400px;
@@ -614,101 +563,57 @@ body{
         flex-wrap: wrap;
     }
     #Banners-container{
-        width: 380px;
+        width: 400px;
+       
     }
 
     .Image-Name{
-        padding-right: 12px;
-        width: 178px;
+        width: 132.5px;   
     }
     #Banners-container img{
-        width: 182px;
-    }
-}
-@media only screen and  (max-width:400px){
-    .slider{
-        width: 290px;
-        height: 250px;
-    }
-    #other-opt{
-        display: none;
-    }
-    #Menu-Btn{
-        display: block;
+        width: 115px;
+        height: 25vh;
 
     }
-    #contentBanners{
-        width: 300px;
-        flex-wrap: wrap;
-        margin: auto;
+    .comments{
+        top: 160px;
     }
-    #Banners-container{
-        width: 300px;
-        margin: auto;
+    .next{
+        font-size: x-small;
     }
-    .Image-Name{
-        padding-right: 12px;
-        width: 138px;
+    .content-type{
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
     }
-    #Banners-container img{
-        width: 140px;
+    .show-name{
+        font-size: x-small;
+    }
+    .adventure{
+        font-size: 15px;
+        border-radius: 0.5rem;
+    }
+    .action{
+        font-size: 15px;
+        border-radius: 0.5rem;  
+    }
+    .Image-Name a{
+        margin-top: -20rem;
     }
     #Heading-box{
-        font-size: 0.9em;
-    }
-
-    .comments{
-        top: 195px;
-        font-size: 11px;
-    }
-    .watch{
-        width: 44px;
-        top: 195px;
-        left: 72px;
-        font-size: 11px;
-    }
-    #LatestNews{
-        margin-left: 0px;
-    }
-    #LatestNewsSection{
-        width: 270px;
+        display: grid;
+        border-left: 5px solid red;
+        border-right: 5px solid red;
+        border-top: 5px solid red;
+        border-bottom: 5px solid red;
+        height: 12%;
+        padding: 0 12px;
+        align-items: center;
+        border-radius: 1rem;
     }
 }
 
-@media only screen and  (max-width:310px){
-    #contentBanners{
-        width: 290px;
-        flex-wrap: wrap;
-        margin: auto;
-    }
-    #Banners-container{
-        width: 290px;
-        margin: auto;
-    }
 
-    .Image-Name{
-        padding-right: 12px;
-        width: 200px;
-        margin: 0 auto;
-    }
-    #Banners-container img{
-        width: 200px;
-    }
 
-    .comments{
-        top: 283px;
-        font-size: 15px;
-    }
-    .watch{
-        width: 55px;
-        top: 283px;
-        left: 119px;
-        font-size: 15px;
-    }
-    .viewAllInNews{
-        max-width: 83px;
-    }
-}
 
 
 
@@ -753,7 +658,6 @@ header{
     left: 0;
     right: 0;
     background: var(--black);
-    padding: 1rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -764,10 +668,9 @@ header{
 
 header .navbar a{
     font-size: 1.7rem;
-    border-radius: .5rem;
-    padding: .5rem 1.5rem;
+    border-radius: 0.5rem;
     color: #fff;
-
+    margin-top: 2rem;
 }
 
 header .navbar a.active,
@@ -942,6 +845,13 @@ header .icons #menu-bars{
   .next {
     background-color: #ff0000;
     color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+  }
+  .next:hover{
+    background-color: #ca0202;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    border-radius: 1rem;
   }
   
   .round {
