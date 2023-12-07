@@ -465,6 +465,9 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
+#categories .Navbar{
+    display: none;
+}
 
 
 ::-webkit-scrollbar {
@@ -497,6 +500,19 @@ body{
 
 
 @media only screen and  (max-width:900px){
+    body{
+        width: 100%;
+    }
+    .h1{
+        font-size: 20px;
+    }
+    .icons{
+        float: left;
+    }
+    .icons .search-icon{
+        display: none;
+    }
+
     #Menu-Btn{
         display: block;
     }
@@ -512,14 +528,6 @@ body{
     }
     .search{
         display: none;
-    }
-
-    .slider{
-        width: 700px;
-    }
-    .slider img{
-        width: 621px;
-        height: 307px;
     }
 
     #contentBanners{
@@ -538,8 +546,12 @@ body{
     }
 
   
-    .slider{
-        width: 540px;
+    .slides-box{
+        margin-bottom: -15rem;
+    }
+    .slider .ls{
+        width: 380px;
+        height: 200px;
     }
     .search{
         right: 49px;
@@ -572,7 +584,7 @@ body{
     }
     #Banners-container img{
         width: 115px;
-        height: 20vh;
+        height: 25vh;
 
     }
     .comments{
@@ -609,6 +621,9 @@ body{
         padding: 0 12px;
         align-items: center;
         border-radius: 1rem;
+    }
+    .movie{
+        display: none;
     }
 }
 
@@ -694,12 +709,7 @@ header .icons a{
 
 
 
-header .icons i:hover,
-header .icons a:hover{
-    color:rgb(0, 0, 0);
-    background: #ffffff;
-    transform: rotate(360deg);
-}
+
 
 header .icons #menu-bars{
     display:none;
@@ -819,11 +829,7 @@ header .icons #menu-bars{
 }
     
 
-@media(max-width:468){
-    html{
-        font-size: 50%;
-    }
-}
+
 
 
 
@@ -2009,13 +2015,7 @@ input[type=text], input[type=password] {
         background: #4b3233;
     }
     
-    header .icons i:hover,
-    header .icons a:hover{
-        color:rgb(0, 0, 0);
-        background: #ffffff;
-        transform: rotate(360deg);
-    }
-    
+
     header .icons #menu-bars{
         display:none;
     }

@@ -8,7 +8,7 @@ menu.onclick=()=>{
 
 let slideIndex = 0;
 showSlides();
-
+showSlides1();
 var modal = document.getElementById('id01');
 
 window.onclick = function(event) {
